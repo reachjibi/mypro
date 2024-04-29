@@ -1,0 +1,484 @@
+/* custom font from cloud storage IAN.G */
+@font-face {
+  font-family: 'CelticHand';
+  src: url('https://res.cloudinary.com/dfwhnlt1s/raw/upload/v1713124666/Bowes-Irish-Whiskey/CelticHand_ezude7.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Google font */
+body, p, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+h1 {
+  font-family: 'CelticHand';
+}
+
+/* Responsive nav IAN.G */
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+  width: 100%;
+  background-color: #169b61eb;
+}
+
+.navbar .navbar-brand {
+  font-size: 2rem;
+  font-family: 'CelticHand';
+}
+
+.navbar .navbar-nav a {
+  font-size: 1rem;
+}
+
+.navbar .navbar-toggler {
+  border: 0px;
+}
+
+ /* buttons IAN.G */
+
+.btn--cta.btn-orange {
+  color: #191919cf;
+  background-color: #f5f5f3c3;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+.btn--cta.btn-orange:hover,
+.btn--cta.btn-orange:active,
+.btn--cta.btn-orange:focus,
+.btn--cta.btn-orange:active:focus {
+    background-color: #ff883ee5;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+
+/* Added in as part of work on contact-page in particular, Philip D. Leverages work done by Ian G. in relation to the background image and visual overlay */
+.container{
+  margin:0 auto;
+}
+
+.row{
+  justify-content: space-between;
+}
+
+.contact-page-container {
+  background: url('../images/whiskey-barrels.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* homepage wideview background IAN.G  */
+.hero-container {
+  height: 100vh;
+
+  background: url('https://res.cloudinary.com/dfwhnlt1s/image/upload/v1713316571/Bowes-Irish-Whiskey/ile5xhvd7imzmajtmlcb.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.visual-overlay {
+  position: absolute;
+  background-color: rgba(121, 76, 46, 0.536);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Jumbotron IAN.G*/
+
+.jumbotron {
+  background-color: rgba(192, 182, 161, 0.791) !important;
+  padding: 18px !important;
+  margin-top: 2em;
+}
+
+.jumbotron h1 {
+  margin-bottom: 1rem;
+}
+
+/* temporary change for review */
+.jumbotron-contact-page {
+  background-color: transparent !important;
+  color: azure;
+}
+
+.jumbotron-contact-page label {
+  color: black;
+  font-weight: 500;
+}
+
+.jumbotron-header {
+  font-size: 55px;
+  color: black;
+}
+
+/* Google font */
+.address {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.jumbotron h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.hr-orange {
+  border: 2px solid #ff883e90;
+  width: 85%;
+}
+
+/* footer IAN.G */
+.footer {
+  background-color: #169b61eb;
+  background: cross-fade(50rem)
+}
+
+.social-icons {
+font-size: 30px;
+color: black;
+}
+
+.icon-3 img{
+  margin-bottom: 7px;
+}
+
+/* About Us page - Jibin*/
+
+.section{
+  padding: 2rem 7%;
+}
+
+.heading{
+
+  text-align: center;
+  font-family:CelticHand;
+  color:rgb(57, 109, 90);
+  text-transform: uppercase;
+  filter: drop-shadow(5px 5px 5px rgb(134, 180, 134));
+  font-size: 4rem;
+  margin-top: 50px;
+}
+
+@media(min-width:768px){
+  #abt_about, .abt_about{
+
+    background:url('../images/about7.jpg') no-repeat center center fixed;
+    height:100%;
+    position:relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    align-items:center;
+    display: flex;
+    padding: 2.5%;
+    margin: 1.4rem;
+  }
+
+  .about_container, #about_container{
+    background-color: whitesmoke;
+    height:100%;
+    position:relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 2.5%;
+    margin: 1.4rem;
+  }
+
+  .abt_image, .abt_row, .abt_content, .abt_about{
+    display: flex;
+    flex-direction: row;
+    flex: 1 2 10rem;
+    margin: 2rem;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content:space-between;
+  
+  }
+
+  .about_row, .about_image, .about_container, .about_content{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1;
+    margin: 2rem;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+  }
+
+}
+
+.abt_about h3{
+
+  font-size: 3rem;
+  color: rgb(57, 109, 90);
+
+}
+
+.abt_about p{
+
+  font-size: 1.3rem;
+  color: #444;
+  padding: 1rem 0;
+  line-height: 1.6;
+
+}
+
+.abt_image img{
+  padding-top: 2rem;
+  filter: drop-shadow(10px 10px 4px #d6d5b7);
+  margin:1.6rem;
+  max-width: 110%;
+  border-radius: 3rem; 
+}
+
+.abt_content{
+
+  max-width: 100%;
+  margin: 5rem;
+  padding: 5rem;
+}
+
+.line{
+
+  margin-top: 35px;
+  position: sticky;
+  margin-bottom: 35px;
+  width: 150px;
+  height: 3px;
+  background:black;
+}
+
+.carousel-inner{
+width:cover;
+height:380px;
+}
+
+
+/* About history */ 
+
+
+
+.about_content h3{
+  font-size: 23px;
+  font-family:Georgia;
+  color: rgb(57, 109, 90);
+  font-weight: bold;
+  text-decoration:solid;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  text-decoration:underline;
+  text-align: center;
+
+}
+
+.about_container, .about_row, .about_content p{
+  font-size: 1.3rem;
+  color: #444;
+  padding: 1rem 0;
+  line-height: 1.6;
+  text-align:center;
+  
+}
+
+.about_image img{
+  padding-top: 2rem;
+  filter: drop-shadow(10px 10px 4px #d6d5b7);
+  margin:1.6rem;
+  max-width: 100%;
+  border-radius: 3rem;
+ 
+}
+
+#butn_green{
+
+color: rgb(31, 90, 13);
+font-weight: bold;
+text-decoration: underline;
+}
+
+#cust_btn{
+  text-align: center !important;
+  font-style: italic;
+  font-weight: bold;
+  color:  rgb(57, 109, 90);
+  text-decoration: underline;
+}
+
+.container, .pt-4{
+
+  padding-top: 2rem;
+}
+
+#text_head{
+  color:rgb(57, 109, 90) !important;
+  filter: drop-shadow(5px 5px 5px rgb(134, 180, 134));
+}
+
+
+
+/* Product Page -Jibin T */
+
+#produc{
+ max-width: cover;
+ height: 100px;
+ background: #a2b8bc;
+
+}
+
+.product_heading{
+
+  text-align: center;
+  background-image: url('../../assets/images/product3.jpg');
+  position:relative;
+  padding: 9rem;
+  margin: 1;
+  font-family:CelticHand;
+  color:rgb(57, 109, 90);
+  text-transform: uppercase;
+  filter: drop-shadow(5px 5px 5px rgb(134, 180, 134));
+  font-size:20px;
+  
+}
+
+.cust_cont, .cust_ro, .cust_cola {
+
+  padding:2rem;
+  text-align: center;
+  background-color: rgb(234, 222, 218);
+}
+
+.product_price{
+  text-align: center;
+}
+
+.cust_bloc{
+  margin: 2rem;
+  font-style:italic;
+  color: rgb(49, 79, 49);
+  font-size: 1.5rem;
+  
+}
+
+.spirit_heading{
+
+  text-align: center;
+  background:#c78542;
+  position:relative;
+  margin: 1.6rem;
+  padding: 2rem;
+  font-family:CelticHand;
+  color:rgb(31, 192, 133);
+  text-transform: uppercase;
+  font-size:20px;
+
+}
+
+
+
+#extend_heading{
+
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  color:rgb(49, 155, 118);
+  text-transform: uppercase;
+  filter: drop-shadow(5px 5px 5px rgb(134, 180, 134));
+  font-size: 3rem;
+  margin-top: 50px;
+
+}
+
+#extend_about, .extend_about {
+
+  background:#c0adad;
+  height:100%;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items:center;
+  display: flex;
+  padding: 2.5%;
+  margin: 1.4rem;
+}
+
+.extend_image, .extend_row, .extend_content, .extend_about{
+
+  display: flex;
+  flex-direction:row-reverse;
+  flex-;
+  flex: 1 1rem;
+  margin: 2rem;
+  padding: 2rem;
+  align-items:center;
+  flex-wrap:wrap;
+  justify-content:left;
+
+}
+
+
+.extend_image img{
+
+  padding: 2rem;
+  filter: drop-shadow(8px 8px 4px #3f3f3f);
+  margin:2rem;
+  max-width: 108%;
+  border-radius: 2rem;
+
+}
+
+#extend_content h3 {
+
+  font-size: 23px;
+  font-family:Georgia;
+  color: rgb(57, 109, 90);
+  font-weight: bold;
+  text-decoration:solid;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  text-decoration:underline;
+  text-align: center;
+  
+}
+
+.extend_row, .extend_content, .extend_about p{
+  font-size: 1.3rem;
+  color: #444;
+  padding: 1rem 0;
+  line-height: 1.6;
+  text-align:left;
+
+}
+
+
+
+
+
+
+
